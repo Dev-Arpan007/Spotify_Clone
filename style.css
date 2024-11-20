@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", serif;
+    color: white;
+   
+}
+
+body{
+    background-color: black;
+}
+
+body::-webkit-scrollbar{
+   display: none;
+}
+p{
+    color: white;
+}
+img{
+    
+    height: 24px;
+  
+}
+
+.nav{
+    display: flex;
+    width: 98vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+    z-index: 10;
+    /* background-color: black; */
+}
+.main-body{
+    margin-top: 5px;
+    display: flex;
+    column-gap: 10px;
+
+}
+.login{
+    display: flex;
+    width: 13vw;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.search{
+    display: flex;
+    margin-left: 7vw;
+   
+
+}
+.search-box{
+    margin-left: 20px;
+    border: 2px solid white;
+    display: flex;
+    width: 28vw;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 10px;
+    background-color:#1f1f1f ;
+    
+}
+
+.search > img:first-child{
+    background-color: #1f1f1f;
+    
+    padding: 8px;
+    border-radius: 50%;
+    height: 25px;
+}
+
+.nav > .logo > img:first-child{
+   
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+
+}
+#song-name{
+   
+    flex: 1;
+    color: white;
+    background-color: #1f1f1f;
+    border: none;
+
+}
+.search-box > img:first-child{
+    margin-right: 10px;
+}
+.login :nth-child(2){
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+   padding-left: 30px;
+    width: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    
+}
+.login :nth-child(1){
+    color: #9b9898;
+    font-weight: bold;
+}
+
+.left{
+   /* border: 1px solid white;*/
+    border-radius: 5px;
+    width: 28vw;
+    margin-top: 10px;
+ 
+    height: 87vh;
+    background-color: #121212;
+    position: fixed;
+    top: 10vh;
+   z-index: 5;
+   }
+   
+.left-line1{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.left-scroll{
+    height: 36vh;
+    /* border: 2px solid white; */
+    overflow-y: scroll;
+    scrollbar-color: #121212 transparent;
+    margin-top: 4vh;
+    
+}
+
+.left-scroll:hover{
+    scrollbar-color: rgb(72, 72, 72) transparent;
+}
+
+
+
+.plus-logo{
+    height: 14px;
+    width: 14px;
+    opacity: 60%;
+}
+
+ .library-logo{
+    height: 24px;
+    width: 24px;
+    opacity: 75%;
+ }
+ .lib-txt{
+    display: flex;
+    width: 9vw;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .left-scroll > div:first-child, .left-scroll > div:nth-child(2){
+    background-color: #1f1f1f;
+    height: 18vh;
+    padding-left:30px ;
+    margin-left: 7px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 23vw;
+    padding-right: 13px;
+ }
+
+ .left-scroll > div:last-child{
+    height: 8vh;
+ }
+
+ .left-scroll > div div:nth-child(1){
+    font-size: 16px;
+  /* position: relative;
+  top: 12px; */
+    padding-top: 10px;
+    font-weight: bolder;
+ }
+ .left-scroll > div div:nth-child(2){
+    font-size: 13px;
+    padding-top: 5px;
+ }
+ .left-scroll > div div:nth-child(3){
+    font-size: 14px;
+    margin-top: 15px;
+    width: 8vw;
+    color: black;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 25px;
+    padding-top: 3px;
+    height: 23px;
+ }
+ #playlist{
+    width: 7vw;
+ }
+ .right-mini{
+   
+ }
+.mini{
+   font-size: 11px;
+   opacity: 0.8;
+   margin-top: 30px;
+   height: 10vh;
+   width: 22vw;
+   /* border: 2px solid white; */
+   display: grid;
+  grid-template-rows: 5vh 5vh;
+  grid-template-columns: 6vw 10vw 6vw ;
+  margin-left: 20px;
+}
+.mini div{
+   width: 10vw;
+}
+.cookies{
+   font-size: 12px;
+   font-weight: 500;
+   margin-left: 20px;
+}
+ .right{
+   
+    width: 70vw;
+  
+    border-radius: 5px;
+    margin-top: 8px;
+   
+ }
+ .right-body{
+   width: 70vw;
+   height: 88vh;
+   position: fixed;
+   background-color: #212121;
+   border-radius: 5px;
+   left: 29vw;
+   top: 11vh;
+      overflow-y:auto;
+      overflow-x: hidden;
+
+ }
+
+ .right-body::-webkit-scrollbar{
+  display: none;
+ }
+
+
+
+ .right-line1, .alb-line1, .rad-line1, .al-line1, .ch-line1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65vw;
+    margin-left: 24px;
+    margin-top: 15px;
+    
+ }
+
+ .right-line1 > div:first-child, .alb-line1 > div:first-child, .rad-line1 > div:first-child, .al-line1 > div:first-child, .ch-line1 > div:first-child{
+    font-size: 24px;
+    font-weight: 600;
+    /* position: relative;
+    top: 10px;
+    left: 24px; */
+ }
+
+ .right-line1 > div:last-child, .alb-line1 > div:last-child, .rad-line1 > div:last-child{
+    position: relative;
+    /* right: 20px; */
+    top: 10px;
+    font-size: 13px;
+    font-weight: 700;
+ }
+
+ .artist-img{
+    display: flex;
+    gap: 10px;
+    margin-left: 1vw;
+ }
+
+ .artist-img div img:nth-child(1){
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 2vh;
+ }
+
+ #arijit,#anirudh{
+    width: 10vw;
+    border-radius: 50%;
+ }
+
+ .artist-img div > div:nth-child(3), .alb-img div > div:nth-child(3){
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 7px;
+    /* font-weight: bold; */
+ }
+ .artist-img div > div:nth-child(4), .alb-img div > div:nth-child(4), .radio-img div > div:nth-child(3), .al-img div > div:nth-child(3), .ch-img div > div:nth-child(3){
+    font-size: 12px;
+    font-weight: 350;
+    margin-left: 7px;
+ }
+
+ .alb-line1, .rad-line1, .al-line1, .ch-line1{
+    margin-top: 5vh;
+ }
+
+ .albums div img:nth-child(1), .radio div img:nth-child(1), .allout div img:nth-child(1), .charts div img:nth-child(1){
+    height: 160px;
+    width: 152px;
+    border-radius: 7px;
+ }
+
+ .alb-img, .radio-img, .al-img, .ch-img{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 0px;
+ }
+
+ .alb-img div  div, .al-img div div, .ch-img div div{
+    width: 148px;
+ }
+
+ 
+
+ .play-icon{
+   /* color:rgb(44, 172, 102); */
+   display: inline-block;
+   position: relative;
+   z-index: 15;
+   bottom: 5vh;
+   height: 20px;
+   width: 20px;
+   left: 7vw;
+   border-radius: 50%;
+   background-color:rgb(44, 172, 102) ;
+   padding: 13px;
+   margin: 0;
+   /* opacity: 0; */
+   /* display: none; */
+ }
+
+ .play-icon:hover{
+   /*  padding: 11px; */
+   opacity: 1;
+   background-color: rgb(94, 207, 145);
+   margin: 0;
+ }
+ .artist-img div, .alb-img div, .radio-img div, .ch-img div, .al-img div{
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   gap: -10px;
+   
+ }
+ .artist-img div:hover, .alb-img div:hover, .radio-img div:hover, .ch-img, .al-img div:hover{
+   cursor: pointer;
+   background-color: #363636;
+   border-radius: 7px;
+  
+ }
+
+ /* .artist-img div > div :nth-child(){
+   position: relative;
+   bottom: 10px;
+   border: 2px solid red;
+ } */
+.play-Music{
+/* border: 2px solid red; */
+height: 13vh;
+width: 69vw;
+position: fixed;
+left: 29vw;
+top: 87vh;
+background-color: #121212;
+z-index: 20;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 1vh;
+padding-right: 1vh;
+} 
+
+.play-Music > img{
+   height: 50px;
+   width: 50px;
+}
+
+.controls {
+   /* border: 2px solid yellow; */
+   width: 8vw;
+   position: relative;
+   left: 7vw;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   height: 20px;
+}
+#progress-bar{
+   -webkit-appearance: none;
+   /* border: 2px solid black ; */
+   height: 4px;
+   width: 340px;
+   margin-top: 20px;
+   background-color: #5e6161;
+   border-radius: 10px;
+   cursor: pointer;
+   position: relative;
+   top: 5px;
+
+}
+#progress-bar::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   border: 2px solid black;
+   height: 17px;
+   width: 17px;
+   border-radius: 50%;
+   border: 5px solid white;
+   outline: 1px solid black;
+   cursor: pointer;
+  
+}
+#volume-bar{
+   -webkit-appearance: none;
+   /* border: 2px solid black ; */
+   height: 4px;
+   width: 70px;
+   margin-top: 40px;
+   background-color: #5e6161;
+   border-radius: 10px;
+   cursor: pointer;
+
+}
+#volume-bar::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   border: 2px solid black;
+   height: 7px;
+   width: 7px;
+   border-radius: 50%;
+   border: 5px solid white;
+   outline: 1px solid black;
+   cursor: pointer;
+}
+
+#play{
+   /* border: 2px solid green; */
+   border-radius: 50%;
+   padding: 10px;
+   padding-left: 13px;
+   padding-right: 13px;
+   color: black;
+   background-color: white;
+}
+
+/* .controls{
+   width: 8vw;
+   position: relative;
+   left: 7vw;
+} */
+ .vol, .playing{
+   display: flex;
+   
+ }
+ .vol i{
+   position: relative;
+   top: 33px;
+   right: 7px;
+ }
+
+/* Styling the container */
+.playing {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.playing img{
+   height: 70px;
+   width: 70px;
+   border-radius: 7px;
+   margin-left: 20px;
+   margin-top: 3px;
+}
+.moving-text-cont2{
+   width: 250px;
+   height: 30px;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+/* Text animation styles */
+.moving-text1 {
+   font-size: 15px;
+   font-weight: bold;
+   white-space: nowrap; /* Prevents text wrapping */
+   overflow: hidden;
+   width: 200px; /* Restrict the visible width */
+   position: relative;
+   margin-top: 25px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   /* left: -20px; */
+   /* text-align: center; */
+}
+
+.moving-text2{
+   font-size: 12px;
+   width: 200px;
+   height: 15px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+/* Keyframes for back-and-forth movement */
+/*@keyframes moveBackAndForth {
+   0% {
+       transform: translateX(0); 
+   }
+   50% {
+       transform: translateX(100px); 
+   }
+   100% {
+       transform: translateX(0); 
+   }
+}*/
+
+/* Applying the animation */
+/* .moving-text1 {
+   display: inline-block;
+   animation: moveBackAndForth 10s ease-in-out infinite; 
+} */
+
+.libsongs > div{
+   margin-top: 9px;
+   margin-left: 5px;
+   margin-right: 5px;
+   padding: 10px;
+   border: 2px solid rgb(132, 130, 130);
+   background-color: rgb(56, 55, 55);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 5px;
+   height: 60px;
+}
+
+.cl{
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 10px;
+
+}
+.cl img{
+   height: 55px;
+   width: 50px;
+   border-radius: 7px;
+}
+
+.cl > div{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+}
+
+.cl > div div:nth-child(1){
+  font-size: 13px;
+  height: 18px;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cl > div div:nth-child(2){
+   font-size: 9px;
+   height: 14px;
+   width: 250px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }
+ /* #imgsp{
+   width: 60px;
+ } */
+  .hidden{
+   display: none;
+  }
+
+  .lib-txt{
+   cursor: pointer;
+  }
+  /* .lib-txt:hover{
+
+  } */
+   .profile{
+      height: 75px;
+      width: 300px;
+      /* border: 2px solid white; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+   }
+
+   .dp{
+      height: 65px;
+      width: 65px;
+      border-radius: 50%;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 5px;
+   }
+
+   .name{
+      font-size: 18px;
+      font-weight: 600;
+   }
+
+   .si, #forward, #backward, #play{
+      cursor: pointer;
+      /* border: 2px solid white; */
+   }
+   .currtime{
+      position:relative;
+      left: -145px;
+      top: 38px;
+      font-size: 12px;
+   }
+   .dur{
+      position:relative;
+      right: -145px;
+      top: 38px;
+      font-size: 12px;
+   }
+
+   #forward{
+      margin-left: 30px;
+      margin-top: 6px;
+   }
+   #backward{
+      position: relative;
+      left: -30px;
+      margin-top: 6px;
+   }
+
+   .myicons{
+      display: flex;
+      align-items: center;
+      width: 120px;
+      justify-content: space-around;
+      position: relative;
+      bottom: 10px;
+      left: 150px;
+   }
