@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4ba617a03.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.svg">
+        </div>
+        <div class="search">
+            <img src="home.svg">
+            <div class="search-box">
+                <img src="search.svg">
+                <input type="text" name="search-song" id="song-name" placeholder="What do you want to play?">
+                <img src="browse.svg">
+            </div>
+
+        </div>
+        <div class="profile">
+            <img src="images/profilePic.jpg" class="dp">
+            <div class="name">Arpan Chakraborty</div>
+        </div>
+        <!-- <div class="login hidden">
+            <p>Sign up</p>
+            <p>Log in</p>
+        </div> -->
+
+    </div>
+    <div class="main-body">
+        <div class="left">
+
+            <div class="left-line1">
+                <div class="lib-txt">
+
+                    <img src="library.svg" class="library-logo">
+                    <div>Your Library</div>
+                </div>
+                <img src="plus.svg" class="plus-logo">
+            </div>
+            <div class="libsongs">
+                <div>
+                    <div class="cl">
+
+                        <img src="images/Husn.jpg" alt="">
+                        <div>
+
+                            <div class="sn">Husn</div>
+                            <div>Anuv Jain</div>
+                        </div>
+                    </div>
+                    <img src="myplay.svg" class="si">
+                </div>
+
+                <div>
+                    <div class="cl">
+
+                        <img src="images/ekTarfa.jpg" alt="">
+                        <div>
+
+                            <div class="sn">Ek Tarfa - Reprise</div>
+                            <div>Darshan Raval</div>
+                        </div>
+                    </div>
+                    <img src="myplay.svg" class="si">
+                </div>
+                <div>
+                    <div class="cl">
+
+                        <img src="images/Pasoori.jpg" alt="">
+                        <div>
+
+                            <div class="sn">Pasoori</div>
+                            <div>Shae Gill, Ali Sethi</div>
+                        </div>
+                    </div>
+                    <img src="myplay.svg" class="si">
+                </div>
+                <div>
+                    <div class="cl">
+
+                        <img src="images/teriBaton2.jpg" alt="">
+                        <div>
+                            <div class="sn">Teri Baaton Mein Aisa Uljha Jiya Title Song(From "Teri Baaton Mein Aisa Uljha Jiya")</div>
+                            <div>Raghav, Tanishk Baghchi, Asheesh kaur</div>
+                        </div>
+
+                    </div>
+                    <img src="myplay.svg" class="si">
+                </div>
+                <div>
+                    <div class="cl">
+
+                        <img src="images/Tumhare-Hi-Rahenge-Hum.jpg" id="imgsp">
+                        <div>
+
+                            <div class="sn">Tumhare Hi Rahenge Hum(From "Stree 2")</div>
+                            <div>Sachin-Jigar, Varun Jain, Shilpa Rao, Amitav Bhattacharya</div>
+                        </div>
+                    </div>
+                    <img src="myplay.svg" class="si">
+                </div>
+                <div>
+                    <div class="cl">
+
+                        <img src="images/tumse.jpg" alt="">
+                        <div>
+
+                            <div class="sn">Tum Se(From "Teri Baaton Mein Aisa Uljha Jiya")</div>
+                            <div>Sachin-Jigar, Raghav Chaitanya, Varun Jain, Indraneel</div>
+                        </div>
+                    </div>
+                    <img src="myplay.svg" class="si">
+                </div>
+            </div>
+            <div class="left-scroll">
+                <div>
+                    <div>Create your playlist</div>
+                    <div>It's easy, we'll help you</div>
+                    <div id="playlist">Create playlist</div>
+                </div>
+                <div>
+                    <div>Let's find some podcasts to follow</div>
+                    <div>We will keep you updated on new episodes</div>
+                    <div>Browse podcasts</div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="left-mini">
+                <div class="mini">
+
+                    <div>Legal</div>
+                    <div>Safety & Privacy Center</div>
+                    <div>Privacy Policy</div>
+                    <div>Cookies</div>
+                    <div>About Adds</div>
+                    <div>Accessibilty</div>
+                </div>
+                <div class="cookies">
+                    Cookies
+                </div>
+            </div>
+        </div>
+        <div class="right-body">
+
+
+
+            <div class="play-Music">
+                <div class="playing">
+                    <img src="images/humnavaMere.jpg" id="playing-img">
+                    <div class="moving-text-cont">
+                        <div class="moving-text-cont1">
+
+                            <div class="moving-text1">
+                                Humnava Mere
+                            </div>
+                        </div>
+                        <div class="moving-text-cont2">
+
+                            <div class="moving-text2">
+                                Jubin Nautiyal, Rocky-Shiv
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <audio src="songs/Humnava Mere_320(PagalWorld.com.sb).mp3" contols autoplay id="song"></audio>
+                <div class="control-pannel">
+                    <div class="controls">
+                        <div class="currtime">0:00</div>
+                        <i class="fa-solid fa-backward-step" id="backward"></i>
+                        <i class="fa-solid fa-play" id="play"></i>
+                        <i class="fa-solid fa-forward-step" id="forward"></i>
+                        <div class="dur">5:28</div>
+                    </div>
+                    <div>
+
+                        <input type="range" id="progress-bar">
+                    </div>
+                </div>
+                <div class="myicons">
+                    <i class="fa-solid fa-headset"></i>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    <i class="fa-brands fa-flipboard"></i>
+                </div>
+                <div class="vol">
+                    <i class="fa-solid fa-volume-high" id="vol-icon"></i>
+                    <input type="range" id="volume-bar">
+                </div>
+
+            </div>
+            <div class="right">
+
+                <div class="right-line1">
+                    <div>
+                        Popular artists
+                    </div>
+                    <div>
+                        Show all
+                    </div>
+                </div>
+
+                <div class="artist-img">
+                    <div>
+                        <img src="images/pritam.jpg">
+                        <img src="circle-play-solid.svg" class="play-icon">
+                        <div>Pritam</div>
+                        <div>Artist</div>
+                    </div>
+                    <div>
+                        <img src="images/rahaman.jpg">
+                        <img src="circle-play-solid.svg" class="play-icon">
+                        <div>A.R. Rahman</div>
+                        <div>Artist</div>
+                    </div>
+                    <div>
+                        <img src="images/sachin_jigar.jpg">
+                        <img src="circle-play-solid.svg" class="play-icon">
+                        <div>Sachin-Jigar</div>
+                        <div>Artist</div>
+                    </div>
+                    <div>
+                        <img src="images/arijit.jpg" id="arijit">
+                        <img src="circle-play-solid.svg" class="play-icon">
+                        <div>Arijit Singh</div>
+                        <div>Artist</div>
+                    </div>
+                    <div>
+                        <img src="images/anirudh.jpg" id="anirudh">
+                        <img src="circle-play-solid.svg" class="play-icon">
+                        <div>Anirudh Ravichander</div>
+                        <div>Artist</div>
+                    </div>
+                    <div>
+                        <img src="images/atif.jpg">
+                        <img src="circle-play-solid.svg" class="play-icon">
+                        <div>Atif Aslam</div>
+                        <div>Artist</div>
+                        <!-- <img src="play-button.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="albums">
+                    <div class="alb-line1">
+                        <div>Popular Albums</div>
+                        <div>Show all</div>
+                        <!-- <img src="play-button.png" alt=""> -->
+                    </div>
+                    <div class="alb-img">
+
+                        <div>
+                            <img src="images/honey.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>GLORY </div>
+                            <div>Yo Yo Honey Singh</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/ashiqui.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>Aashiqui 2 </div>
+                            <div>Mithoon, Ankit Tiwari, Jeet Ganguly</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/jo-TUM.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>Jo Tum Mere Ho</div>
+                            <div>Anuv Jain </div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/masking_mem.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>Making Memories </div>
+                            <div>Karan Aujla, Ikky</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/barfi.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>Yeh Jawaani Hai Deewani </div>
+                            <div>Pritam</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/aj_ki_raat.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>Aaj Ki Raat(From "Stree 2") </div>
+                            <div>Sachin-Jigar, Amitabh Bhattacharya</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="radio">
+                    <div class="rad-line1">
+                        <div>Popular radio</div>
+                        <div>Show all</div>
+                    </div>
+                    <div class="radio-img">
+
+                        <div>
+                            <img src="images/arijit2.jpeg">
+                            <!-- <div>GLORY  </div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Atif Aslam, Mithoon, Pritam and...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/kishore_radio.jpeg">
+                            <!-- <div>Aashiqui 2  </div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Mohammad Rafi, Mukesh, Asha Bhosl...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/diljit2.jpeg">
+                            <!-- <div>Jo Tum Mere Ho</div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Karan Aujla, AP Dilhon an... </div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/KK.jpeg">
+                            <!-- <div>Making Memories  </div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Pritam, Mohit Chauhan, Atif Aslam...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/rahman_radio.jpeg">
+                            <!-- <div>Yeh Jawaani Hai Deewani  </div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Harish Jayaraj, G.V. Prakash,Anirudh...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/Udit_radio.jpeg">
+                            <!-- <div>Aaj Ki Raat(From "Stree 2")  </div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Abhijeet, Anuradha Paudwal...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="ch-line1">
+                        <div>Featured Charts</div>
+                        <!-- <div>Show all</div> -->
+                    </div>
+                    <div class="ch-img">
+
+                        <div>
+                            <img src="images/purple.jpg">
+                            <!-- <div>GLORY  </div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Atif Aslam, Mithoon, Pritam and...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/redUSA.jpg">
+                            <!-- <div>Aashiqui 2  </div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Mohammad Rafi, Mukesh, Asha Bhosl...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/blue.jpg">
+                            <!-- <div>Jo Tum Mere Ho</div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Karan Aujla, AP Dilhon an... </div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/red.jpg">
+                            <!-- <div>Making Memories  </div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Pritam, Mohit Chauhan, Atif Aslam...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/green_violet.jpg">
+                            <!-- <div>Yeh Jawaani Hai Deewani  </div> -->
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <div>With Harish Jayaraj, G.V. Prakash,Anirudh...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/redBlue.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <!-- <div>Aaj Ki Raat(From "Stree 2")  </div> -->
+                            <div>With Abhijeet, Anuradha Paudwal...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="allout">
+                    <div class="al-line1">
+                        <div>
+                            Playlists from our Editors
+                        </div>
+                    </div>
+                    <div class="al-img">
+                        <div>
+                            <img src="images/thursday.jpeg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <!-- <div>GLORY  </div> -->
+                            <div>#SpotifyTBT is all about Halloween thi...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/accoustics.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <!-- <div>GLORY  </div> -->
+                            <div>Big Hits from the world of Accoustics.</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/hiphop.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <!-- <div>GLORY  </div> -->
+                            <div>Taking it back to the 2010s. Cover Chief..</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/hiphop2000.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <!-- <div>GLORY  </div> -->
+                            <div>#SpotifyTBT is all about Halloween thi...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/lovewhite.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <!-- <div>GLORY  </div> -->
+                            <div>The most essential R&B songs...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                        <div>
+                            <img src="images/lovepurple.jpg">
+                            <img src="circle-play-solid.svg" class="play-icon">
+                            <!-- <div>GLORY  </div> -->
+                            <div>Anthems from the early days or record...</div>
+                            <!-- <img src="play-button.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
